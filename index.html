@@ -2,12 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TemperatureConverter</title>
+    <link rel="stylesheet" href="./index.css" />
+    <title>Temperature Converter</title>
+    <script src="./build/js/index.js" defer></script>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="container">
+      <h1>Select Convertion:</h1>
+      <section class="convertButton">
+        <button class="button" id="CF">C - F</button>
+        <button class="button" id="CF">F - C</button>
+      </section>
+      <h3>Input here:</h3>
+      <input type="text" id="input"/>
+      <h3 class="result">Result: <span id="resultHere"></span></h3>
+    </div>
   </body>
 </html>

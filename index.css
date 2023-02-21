@@ -1,0 +1,31 @@
+*{
+  margin: 5px;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(80, 80, 80);
+  color: white;
+}
+.container{
+  max-width: 500px;
+  margin: auto;
+}
+.convertButton{
+  margin: auto;
+}
+.button{
+  transition: all ease 0.2s;
+  cursor: pointer;
+  padding: 8px 10px;
+  font-size: large;
+  border: none;
+  border-radius: 10px;
+}
+.button:hover{
+  transition: all ease 0.3s;
+  transform: scale(1.2);
+}
+input{
+  padding: 5px;
+}
