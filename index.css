@@ -22,6 +22,10 @@ body{
   border: none;
   border-radius: 10px;
 }
+.gray{
+  background-color: gray;
+  color: white;
+}
 .button:hover{
   transition: all ease 0.3s;
   transform: scale(1.2);
