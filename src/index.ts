@@ -29,7 +29,7 @@ const selectedButton = (a:string):void=>{
  }
 }
 
-const handleConvert = (a:string) =>{
+const handleConvert = (a:string):void =>{
   const value:number = parseInt(input.value)
   error.textContent = ''
   if(isNaN(value)){
