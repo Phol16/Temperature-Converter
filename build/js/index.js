@@ -24,22 +24,26 @@ const selectedButton = (a) => {
 };
 const handleConvert = (a) => {
     const value = parseInt(input.value);
+    error.style.display = 'none';
     error.textContent = '';
     if (isNaN(value)) {
-        error.textContent = 'invalid Input';
+        error.style.display = 'block';
+        error.textContent = 'Invalid Input!';
         throw new Error('inputted value is not a number');
     }
     if (a === 'celcius') {
-        result.textContent = `${(value * (9 / 5)) + 32}`;
+        result.textContent = `${value * (9 / 5) + 32} F°`;
     }
     else {
-        result.textContent = `${(value - 32) * (5 / 9)}`;
+        result.textContent = `${(value - 32) * (5 / 9)} C°`;
     }
 };
 CF.addEventListener('click', () => {
+    error.style.display = 'none';
     selectedButton("celcius" /* select.celcius */);
 });
 FC.addEventListener('click', () => {
+    error.style.display = 'none';
     selectedButton("farenheit" /* select.farenheit */);
 });
 convert.addEventListener('click', () => {
