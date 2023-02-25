@@ -39,7 +39,12 @@ body{
   transform: scale(1.2);
 }
 input{
-  padding: 5px;
+  background-color: rgb(150, 150, 150);
+  color: white;
+  font-size: larger;
+  border: none;
+  padding: 10px;
+  width: 250px;
 }
 #error{
   color: rgb(218, 196, 0);
