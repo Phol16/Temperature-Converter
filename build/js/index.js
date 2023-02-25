@@ -24,6 +24,7 @@ const selectedButton = (a) => {
 };
 const handleConvert = (a) => {
     const value = parseInt(input.value);
+    result.textContent = '';
     error.style.display = 'none';
     error.textContent = '';
     if (isNaN(value)) {

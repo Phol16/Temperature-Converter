@@ -31,6 +31,7 @@ const selectedButton = (a: string): void => {
 
 const handleConvert = (a: string): void => {
   const value: number = parseInt(input.value);
+  result.textContent = ''
   error.style.display = 'none'
   error.textContent = '';
   if (isNaN(value)) {
